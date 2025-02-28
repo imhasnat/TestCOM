@@ -1,0 +1,50 @@
+.filter-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-options {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-select,
+.filter-input {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  background-color: #ebeded; /* Light gray background */
+  color: #333;
+  border: 1px solid #ddd;
+  width: 98px;
+}
+
+.sort-select {
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.filter-select:hover,
+.filter-input:hover,
+.sort-select:hover {
+  border-color: #aaa;
+}
+
+.sort-select,
+.filter-select {
+  appearance: none; /* Hide default select arrow for styling consistency */
+  background-image: url("/icons/arrow-down.svg"); /* Replace with arrow icon if desired */
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}

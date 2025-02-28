@@ -1,0 +1,5 @@
+@media screen and (max-width: 991px) {
+  #basic-navbar-nav.nav-hide {
+    display: none !important;
+  }
+}

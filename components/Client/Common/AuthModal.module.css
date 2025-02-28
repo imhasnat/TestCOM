@@ -1,0 +1,73 @@
+/* Modal styling */
+.authModal .modal-content {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modalHeader {
+  border-bottom: none;
+  padding: 0 10px;
+}
+
+.authTabs {
+  border-bottom: none;
+}
+
+.authTab {
+  color: #555;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.authTab.active,
+.authTab:hover {
+  color: #f35c7a;
+  background-color: #fff;
+  border-bottom: 2px solid #f35c7a;
+  border-radius: 0;
+}
+
+.modalBody {
+  padding: 2rem;
+}
+
+.inputField {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: border-color 0.3s;
+}
+
+.inputField:focus {
+  border-color: #f35c7a;
+  box-shadow: none;
+}
+
+.submitButton {
+  background-color: #f35c7a;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.submitButton:hover {
+  background-color: transparent;
+  border: 1px solid #f35c7a;
+  color: #f35c7a;
+}
+
+/* Additional link styling */
+.ques a {
+  color: #f35c7a;
+  font-weight: 500;
+}
+
+.ques a:hover {
+  text-decoration: underline;
+}

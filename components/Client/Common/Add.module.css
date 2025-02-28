@@ -1,0 +1,27 @@
+.quantityGroup {
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  width: 8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantity {
+  padding: 0 1rem;
+}
+
+.addButton {
+  width: 9rem;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  border: 1px solid #f35c7a;
+  color: #f35c7a;
+}
+
+.addButton:hover {
+  background-color: #f35c7a; /* Custom bg color for hover */
+  color: white;
+  border: #f35c7a;
+}

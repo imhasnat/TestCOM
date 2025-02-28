@@ -1,0 +1,29 @@
+/* Main Container Padding */
+.campaign-section {
+  background-color: #fce4ec;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+
+.campaign-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4a4a4a;
+}
+
+.buy-now-btn {
+  background-color: #f35c7a;
+  border: none;
+  padding: 0.75rem 1.5rem;
+}
+
+.campaign-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}

@@ -1,0 +1,50 @@
+.order-list-container {
+  margin-top: 20px;
+}
+
+.order-card {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-card h5 {
+  font-weight: bold;
+}
+
+.order-number {
+  color: #007bff;
+}
+
+.order-status {
+  font-size: 1rem;
+  padding: 0.4em 0.8em;
+  border-radius: 20px;
+}
+
+.order-item-image {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.order-list-spinner,
+.order-list-error,
+.order-list-empty {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.2rem;
+}

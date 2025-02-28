@@ -1,0 +1,123 @@
+.address-selection-panel {
+  width: 450px !important;
+  max-width: 100% !important;
+}
+
+.panel-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.5rem !important;
+}
+
+.panel-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.panel-body {
+  padding: 1.5rem !important;
+  background-color: #f8fafc;
+}
+
+.address-type-select {
+  margin-bottom: 1.5rem;
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+
+.address-card {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.address-card:hover {
+  border-color: #4299e1;
+  transform: translateY(-1px);
+}
+
+.address-card.selected {
+  border-color: #4299e1;
+  background-color: #ebf8ff;
+}
+
+.address-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.address-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.name {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.current-badge {
+  background-color: #4299e1;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.address-type {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.address-details {
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.address-line {
+  margin-bottom: 0.25rem;
+}
+
+.address-phone {
+  margin-top: 0.5rem;
+  color: #718096;
+}
+
+.add-address-button {
+  position: sticky;
+  bottom: 0;
+  background-color: #f8fafc;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Customize scrollbar */
+.address-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.address-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.address-list::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+}
+
+.address-list::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}

@@ -1,0 +1,118 @@
+.address-card {
+  background: #ffffff;
+  border: none !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.address-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.address-card .card-header {
+  background: linear-gradient(135deg, #f8f9ff 0%, #f1f4ff 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1.25rem 1.5rem;
+}
+
+.address-type-icon {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.shipping-icon {
+  color: #4f46e5;
+}
+
+.billing-icon {
+  color: #06b6d4;
+}
+
+.address-card .btn-change {
+  color: #4b5563;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.address-card .btn-change:hover {
+  background: #f8fafc;
+  color: #1f2937;
+  text-decoration: none;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+.address-content {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.address-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #4f46e5 var(--gradient-stop, 50%),
+    #06b6d4 var(--gradient-stop, 50%)
+  );
+  opacity: 0.2;
+}
+
+.address-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.address-value {
+  color: #1f2937;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.empty-address {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.empty-address-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.5rem;
+  color: #9ca3af;
+}
+
+.empty-address-text {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.address-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}

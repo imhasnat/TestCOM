@@ -1,0 +1,91 @@
+{
+  "fields": [
+    {
+      "tag": "input",
+      "type": "text",
+      "name": "username",
+      "label": "Username",
+      "placeholder": "Enter your username",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "email",
+      "name": "email",
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "phone",
+      "name": "phone",
+      "label": "Phone",
+      "placeholder": "Enter your phone number",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "date",
+      "name": "birthdate",
+      "label": "Birthdate",
+      "required": true
+    },
+    {
+      "tag": "input",
+      "type": "number",
+      "name": "age",
+      "label": "Age",
+      "min": 1,
+      "max": 100,
+      "required": true
+    },
+    {
+      "tag": "textarea",
+      "name": "bio",
+      "label": "Bio",
+      "placeholder": "Tell us about yourself",
+      "required": false,
+      "rows": 5
+    },
+    {
+      "tag": "input",
+      "type": "checkbox",
+      "name": "subscribe",
+      "label": "Subscription Preferences",
+      "required": false,
+      "options": [
+        { "label": "Newsletter", "value": "newsletter" },
+        { "label": "Promotions", "value": "promotions" },
+        { "label": "Updates", "value": "updates" }
+      ]
+    },
+    {
+      "tag": "input",
+      "type": "radio",
+      "name": "gender",
+      "label": "Gender",
+      "required": true,
+      "options": [
+        { "label": "Male", "value": "male" },
+        { "label": "Female", "value": "female" }
+      ]
+    },
+    {
+      "tag": "select",
+      "name": "country",
+      "label": "Country",
+      "required": true,
+      "options": [
+        { "label": "United States", "value": "us" },
+        { "label": "Canada", "value": "ca" },
+        { "label": "United Kingdom", "value": "uk" }
+      ]
+    },
+    {
+      "tag": "button",
+      "type": "submit",
+      "label": "Submit"
+    }
+  ]
+}

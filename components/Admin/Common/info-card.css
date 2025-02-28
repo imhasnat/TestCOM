@@ -1,0 +1,20 @@
+.info-card {
+  background-color: #f8f9fa;
+  border-left: 5px solid #007bff;
+}
+
+.info-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.info-list {
+  list-style-type: none;
+  padding-left: 0;
+  color: #555;
+}
+
+.info-list li {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}

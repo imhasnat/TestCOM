@@ -1,0 +1,147 @@
+/* slider.css */
+.slider-container {
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  width: max-content;
+  height: 100%;
+  display: flex;
+  transition: all 1s ease-in-out;
+}
+
+.slide {
+  width: 100vw;
+  height: 100%;
+}
+
+.text-container {
+  height: 50%;
+  gap: 2rem;
+}
+
+.image-container {
+  height: 50%;
+  position: relative;
+}
+
+.slider-img-fit {
+  object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+  .text-container,
+  .image-container {
+    height: 100%;
+  }
+
+  .slider-img-fit {
+    /* object-fit: contain; */
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Typography */
+.description {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .description {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .description {
+    font-size: 3rem;
+  }
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .title {
+    font-size: 6rem;
+  }
+}
+
+/* Gradient Backgrounds */
+.gradient-yellow-pink {
+  background: linear-gradient(
+    to right,
+    rgba(254, 252, 232, 1),
+    rgba(254, 242, 242, 1)
+  );
+}
+
+.gradient-pink-blue {
+  background: linear-gradient(
+    to right,
+    rgba(254, 242, 242, 1),
+    rgba(239, 246, 255, 1)
+  );
+}
+
+.gradient-blue-yellow {
+  background: linear-gradient(
+    to right,
+    rgba(239, 246, 255, 1),
+    rgba(254, 252, 232, 1)
+  );
+}
+
+/* Dots Navigation */
+.slider-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.dot-wrapper {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: 1px solid rgb(75, 85, 99);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.dot-wrapper.active {
+  transform: scale(1.5);
+}
+
+.dot-inner {
+  width: 6px;
+  height: 6px;
+  background-color: rgb(75, 85, 99);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .text-container {
+    gap: 1rem;
+  }
+}
